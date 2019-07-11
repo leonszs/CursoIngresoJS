@@ -14,6 +14,6 @@ function mostrar()
     }
 
     //agarrar todos los id 
-    // leer siempre la condiciòn
+    // leer siempre la condiciòn de if
 
 }//FIN DE LA FUNCIÓN
