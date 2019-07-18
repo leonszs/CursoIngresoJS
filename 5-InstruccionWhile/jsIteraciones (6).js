@@ -12,8 +12,7 @@ function mostrar()
 
 	while (contador<5){
 		numero = parseInt(prompt ("ingrese un numero"));
-		suma +=numero;
-
+		acumulador = numero + acumulador;
          
 
 
