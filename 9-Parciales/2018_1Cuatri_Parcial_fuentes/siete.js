@@ -10,7 +10,7 @@ function mostrar()
 
    var cantidadvarones = 0;
 
-    for (var i = 1; i<6 ; i++){
+    for (var i = 1; i<5 ; i++){
 
            nota = parseInt (prompt ("ingrese una nota"));
            sexo = prompt ("ingrese su sexo");
@@ -45,12 +45,12 @@ function mostrar()
 
     }
 
-    promedio = acumulador / 5;
+    promedio = acumuladornotas / 5;
 
 
-    
-
-
+   alert (" el promedio de las notas totales:    " + promedio);
+   alert (" la nota mas baja:   " + notabaja + " el sexo de la persona:  " + sexobajo);
+   alert ( " la cantida de varones q sacaron mas q 6:   " + cantidadvarones);
 
 
 
