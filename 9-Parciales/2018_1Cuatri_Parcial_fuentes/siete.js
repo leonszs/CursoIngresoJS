@@ -7,10 +7,10 @@ function mostrar()
    var notabaja;
    var flag = 0;
    var sexobajo;
-
+    var  notamasaltavarones;
    var cantidadvarones = 0;
 
-    for (var i = 1; i<5 ; i++){
+    for (var i = 0; i<5 ; i++){
 
            nota = parseInt (prompt ("ingrese una nota"));
            sexo = prompt ("ingrese su sexo");
@@ -29,15 +29,16 @@ function mostrar()
          acumuladornotas = acumuladornotas + nota;
 
 
-         if (nota < notabaja || flag == 0){
+         if (nota < notabaja || i == 0 ){            // flag == 0;// cuando se tiene q decir una vez, no utilizar flag (funciona igual y està bien);
 
             notabaja = nota;
             sexobajo = sexo;
-            flag = 1;
+           
          }
 
-         if (sexo == "m " && nota >=6){ 
-
+         if (nota >= 6 && sexo == "m"){  //el orden altera la respuesta, ultimo va la validacion del sexo etc.
+               
+            
             cantidadvarones ++;
          }
        
@@ -50,8 +51,9 @@ function mostrar()
 
    alert (" el promedio de las notas totales:    " + promedio);
    alert (" la nota mas baja:   " + notabaja + " el sexo de la persona:  " + sexobajo);
-   alert ( " la cantida de varones q sacaron mas q 6:   " + cantidadvarones);
+   alert ( " la cantida de varones que sacaron mas q 6: " + cantidadvarones );
 
 
 
 }
+

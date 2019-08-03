@@ -36,7 +36,7 @@ do {
 
 
      
-
+         
 
 
 
@@ -45,12 +45,12 @@ do {
     
 
      if (numero<0){ 
-       acumuladornegativos = acumuladornegativos +numero;
+       acumuladornegativos = acumuladornegativos +numero; //e
 
        contadornegativos++;
 
      }
-     else if (numero>0){ 
+     else if (numero>0){  //d
 
         acumuladorpositivos = acumuladorpositivos + numero;
 
@@ -58,21 +58,22 @@ do {
      }
      else { 
 
-        contadorceros++;
+        contadorceros++;         //c
      }
 
 
-     if (numero % 2 == 0){ 
+     if (numero % 2 == 0){        //a
 
         contadorpar++;
      }
 
-     if (numero %2 == 1){ 
+    else //if (numero %2 == 1){  //b
+         {  
 
         contadorimpar++;
      }
 
-     if (numero>minimo || flag == 0){ 
+     if (numero>minimo || flag == 0){  //f
          
         
 
@@ -80,7 +81,7 @@ do {
         letramax = letra;
      }
             
-     if (numero<minimo  || flag == 0  )
+     if (numero<minimo  || flag == 0  ) {   //f
           
      minimo = numero;
      letramin = letra;
@@ -88,7 +89,7 @@ do {
 
 
           flag = 1;
-           
+            }
 
            respuesta = prompt ("quiere seguir ingresando");
  } 
@@ -97,7 +98,7 @@ do {
 
 
 
-     if (contadorpositivos !=0 ){
+     if (contadorpositivos !=0 ){        //d
 
         promediopositivos = acumuladorpositivos /contadorpositivos;
      }
